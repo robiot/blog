@@ -1,4 +1,5 @@
 import { Head, Html, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 const MainDocument = () => {
     return (
@@ -15,6 +16,20 @@ const MainDocument = () => {
                     rel="stylesheet"
                 />
             </Head>
+            <Script
+                strategy="lazyOnload"
+                src="https://www.googletagmanager.com/gtag/js?id=G-0TD10KS0VK"
+            ></Script>
+            <Script strategy="lazyOnload" id="a">
+                {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0TD10KS0VK');
+        
+    `}
+            </Script>
             <body className="font-default">
                 <Main />
                 <NextScript />

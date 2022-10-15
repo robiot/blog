@@ -11,3 +11,6 @@ out/
 .output
 generated
 .obsidian
+.data
+sitemap.xml
+robots.txt

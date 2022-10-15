@@ -2,7 +2,7 @@
 title: "Automate releasing with Github Actions"
 description: "Manual releases are boring, so let’s automate them."
 date: "2022/03/28"
-cover: "universeheader1.png"
+cover: "fire-cicd.jpg"
 ---
 
 ![](fire-cicd.jpg)
